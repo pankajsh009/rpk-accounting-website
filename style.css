@@ -1,3 +1,7 @@
+/* =========================
+   RPK Accounting Website
+========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +10,14 @@
 }
 
 body {
-    color: #333;
+    color: #333333;
     line-height: 1.6;
     background: #ffffff;
 }
 
+/* =========================
+   Container
+========================= */
 
 .container {
     width: 90%;
@@ -18,128 +25,207 @@ body {
     margin: auto;
 }
 
+/* =========================
+   Header
+========================= */
 
 header {
-    background: #0b3d91;
+    background: linear-gradient(135deg, #26384D, #34495E);
     color: white;
     text-align: center;
     padding: 80px 20px;
 }
-
 
 header h1 {
     font-size: 42px;
     margin-bottom: 15px;
 }
 
-
 header p {
     font-size: 20px;
     margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* =========================
+   Logo
+========================= */
 
-.button {
-    display: inline-block;
-    background: #f4b400;
-    color: #000;
-    padding: 12px 25px;
-    margin: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-
-.button.secondary {
-    background: white;
-    color: #0b3d91;
-}
-
-
-section {
-    padding: 50px 0;
-}
-
-
-h2 {
-    text-align: center;
-    color: #0b3d91;
-    margin-bottom: 25px;
-    font-size: 32px;
-}
-
-
-.services {
-    background: #f7f9fc;
-}
-
-
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-}
-
-
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-}
-
-
-.card h3 {
-    color: #0b3d91;
-    margin-bottom: 10px;
-}
-
-
-ul {
-    max-width: 600px;
-    margin: auto;
-    font-size: 18px;
-}
-
-
-.contact {
-    background: #eef4ff;
-    text-align: center;
-}
-
-
-footer {
-    background: #0b3d91;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-
-@media(max-width:600px){
-
-header h1 {
-    font-size: 30px;
-}
-
-header p {
-    font-size: 17px;
-}
-
-h2 {
-    font-size: 26px;
-}
-
-}
 .logo {
     width: 400px;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 900px) {
     .logo {
-        width: 200px;
+        width: 220px;
+    }
+}
+
+/* =========================
+   Buttons
+========================= */
+
+.button {
+    display: inline-block;
+    background: #C52B33;
+    color: white;
+    padding: 14px 28px;
+    margin: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: #A32027;
+    transform: translateY(-3px);
+}
+
+.button.secondary {
+    background: white;
+    color: #26384D;
+    border: 2px solid #26384D;
+}
+
+.button.secondary:hover {
+    background: #26384D;
+    color: white;
+}
+
+/* =========================
+   Sections
+========================= */
+
+section {
+    padding: 70px 0;
+}
+
+h2 {
+    text-align: center;
+    color: #26384D;
+    margin-bottom: 35px;
+    font-size: 34px;
+}
+
+/* =========================
+   Services
+========================= */
+
+.services {
+    background: #F5F7FA;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* =========================
+   Cards
+========================= */
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border-top: 5px solid #C52B33;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+    color: #26384D;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555;
+}
+
+/* =========================
+   About / Lists
+========================= */
+
+ul {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+}
+
+ul li {
+    margin-bottom: 12px;
+}
+
+/* =========================
+   Contact Section
+========================= */
+
+.contact {
+    background: #EEF2F6;
+    text-align: center;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    background: #26384D;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* =========================
+   Smooth Scrolling
+========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 60px 15px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .button {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto;
     }
 }

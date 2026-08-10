@@ -135,10 +135,10 @@ h2 {
 .logo {
     width: 400px;
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
     .logo {
         width: 200px;
     }

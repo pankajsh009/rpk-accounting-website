@@ -1,20 +1,27 @@
-const faqButtons =
-document.querySelectorAll(".faq-question");
+const cards = document.querySelectorAll(".card");
 
-faqButtons.forEach(button => {
+cards.forEach(card => {
 
-button.addEventListener("click", () => {
+card.addEventListener("mouseenter", () => {
+card.style.transform = "translateY(-10px)";
+});
 
-const answer =
-button.nextElementSibling;
-
-if(answer.style.display === "block"){
-answer.style.display = "none";
-}
-else{
-answer.style.display = "block";
-}
+card.addEventListener("mouseleave", () => {
+card.style.transform = "translateY(0px)";
+});
 
 });
+
+window.addEventListener("scroll", () => {
+
+const header = document.querySelector("header");
+
+if(window.scrollY > 50){
+header.style.boxShadow =
+"0 10px 25px rgba(0,0,0,.08)";
+}
+else{
+header.style.boxShadow = "none";
+}
 
 });

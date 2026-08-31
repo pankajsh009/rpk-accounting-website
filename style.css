@@ -286,10 +286,10 @@ p {
 
 .header-inner {
   display: grid;
-  min-height: 86px;
-  grid-template-columns: 148px minmax(430px, 1fr) auto;
+  min-height: 92px;
+  grid-template-columns: 170px minmax(430px, 1fr) auto;
   align-items: center;
-  gap: 28px;
+  gap: 26px;
 }
 
 .brand {
@@ -307,6 +307,16 @@ p {
   height: 60px;
   object-fit: contain;
   object-position: left center;
+}
+
+.site-header .brand {
+  width: 164px;
+  height: 76px;
+}
+
+.site-header .brand img {
+  width: 158px;
+  height: 72px;
 }
 
 .primary-navigation {
@@ -1921,16 +1931,18 @@ p {
 
 @media (max-width: 1180px) {
   .header-inner {
-    grid-template-columns: 130px 1fr auto;
+    grid-template-columns: 150px 1fr auto;
     gap: 18px;
   }
 
-  .brand {
-    width: 126px;
+  .site-header .brand {
+    width: 146px;
+    height: 68px;
   }
 
-  .brand img {
-    width: 120px;
+  .site-header .brand img {
+    width: 140px;
+    height: 66px;
   }
 
   .primary-navigation {
@@ -2183,14 +2195,14 @@ p {
     display: none;
   }
 
-  .brand {
-    width: 116px;
-    height: 58px;
+  .site-header .brand {
+    width: 130px;
+    height: 64px;
   }
 
-  .brand img {
-    width: 112px;
-    height: 55px;
+  .site-header .brand img {
+    width: 126px;
+    height: 62px;
   }
 
   .hero-grid {

@@ -356,6 +356,14 @@ p {
   transform-origin: left;
 }
 
+.primary-navigation a[aria-current="page"] {
+  color: var(--accent);
+}
+
+.primary-navigation a[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+
 .header-actions {
   display: flex;
   align-items: center;
@@ -381,6 +389,73 @@ p {
   border-radius: 999px;
   background: var(--ink);
   transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.page-hero {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 86% 10%, rgba(186, 47, 50, 0.12), transparent 26%),
+    radial-gradient(circle at 12% 92%, rgba(38, 56, 74, 0.08), transparent 28%),
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.page-hero::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 6px;
+  background: linear-gradient(180deg, var(--accent), rgba(186, 47, 50, 0));
+  content: "";
+}
+
+.page-hero-inner {
+  display: flex;
+  min-height: 430px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-block: 76px 84px;
+  text-align: center;
+}
+
+.page-hero h1 {
+  max-width: 900px;
+  margin-top: 15px;
+  font-size: clamp(46px, 5.4vw, 68px);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+}
+
+.page-hero p {
+  max-width: 750px;
+  margin-top: 22px;
+  color: #536176;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.page-hero-actions,
+.section-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+}
+
+.page-hero-actions {
+  margin-top: 30px;
+}
+
+.section-actions {
+  margin-top: 38px;
+}
+
+.section-actions .text-link {
+  margin-top: 0;
 }
 
 .hero {
@@ -2032,6 +2107,12 @@ p {
     display: none;
   }
 
+  .primary-navigation a[aria-current="page"] {
+    padding-inline: 12px;
+    border-radius: 9px;
+    background: var(--accent-light);
+  }
+
   .header-actions {
     margin-left: auto;
   }
@@ -2197,6 +2278,30 @@ p {
   .hero-grid {
     min-height: 0;
     padding-block: 58px 68px;
+  }
+
+  .page-hero-inner {
+    min-height: 370px;
+    padding-block: 62px 68px;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(39px, 11vw, 52px);
+  }
+
+  .page-hero p {
+    font-size: 16px;
+  }
+
+  .page-hero-actions,
+  .section-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .page-hero-actions .button,
+  .section-actions .button {
+    width: 100%;
   }
 
   .eyebrow {

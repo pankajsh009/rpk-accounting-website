@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <title>Tax Preparation Fee Calculator | RPK Accounting</title>
+  <link rel="canonical" href="https://rpkaccounting.ca/calculator.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-r-32x32.png?v=20260901">
+  <link rel="shortcut icon" href="favicon-r.ico?v=20260901">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-r.png?v=20260901">
+  <meta name="description" content="Use RPK Accounting's quick calculator to estimate the starting preparation fee for personal, couple, rental, self-employed or corporate tax services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=multipage-20260901">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="utility-bar">
+    <div class="site-container utility-inner">
+      <p><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"></path><path d="M3.6 9h16.8M3.6 15h16.8M12 3c2.3 2.5 3.4 5.5 3.4 9S14.3 18.5 12 21c-2.3-2.5-3.4-5.5-3.4-9S9.7 5.5 12 3Z"></path></svg>Virtual accounting and tax support across Canada</p>
+      <div class="utility-links"><a href="tel:+16476752535">647-675-2535</a><span aria-hidden="true">•</span><a href="mailto:tax.rpk@gmail.com">tax.rpk@gmail.com</a></div>
+    </div>
+  </div>
+  <header class="site-header" id="top">
+    <div class="site-container header-inner">
+      <a class="brand" href="index.html" aria-label="RPK Accounting home"><img src="rpk-logo.png" alt="RPK Accounting"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation"><span></span><span></span><span></span></button>
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="calculator.html" aria-current="page">Tax Calculator</a><a href="about.html">About Us</a><a href="resources.html">Resources</a>
+      </nav>
+      <div class="header-actions">
+        <a class="button button-quiet button-small" href="https://docs.google.com/forms/d/e/1FAIpQLSdkCDDYJLLwhpc_lVkpi-7uktjtUjOWHdUoQZ3_wsa8YD4_XA/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">Secure Client Upload</a>
+        <a class="button button-primary button-small" href="index.html#contact">Book a Free Consultation</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="site-container page-hero-inner">
+        <span class="section-label">Tax calculator</span>
+        <h1>Estimate your starting preparation fee.</h1>
+        <p>Select the service closest to your situation for a quick, no-obligation starting point. Your final fee is confirmed after the scope is reviewed.</p>
+        <div class="page-hero-actions"><a class="button button-secondary" href="pricing.html">Compare Packages</a></div>
+      </div>
+    </section>
+
+    <section class="section estimator-section">
+      <div class="site-container estimator-grid">
+        <div class="estimator-copy">
+          <span class="section-label">Quick estimate</span>
+          <h2>Choose the service closest to your needs.</h2>
+          <p>This calculator estimates RPK’s preparation fee—not your tax refund or balance owing.</p>
+          <ul class="check-list">
+            <li><span>✓</span> No obligation</li>
+            <li><span>✓</span> Final price confirmed before work begins</li>
+            <li><span>✓</span> Complex or multi-year files quoted separately</li>
+          </ul>
+        </div>
+        <div class="estimator-card">
+          <div class="field-group">
+            <label for="service-type">What do you need help with?</label>
+            <div class="select-wrap">
+              <select id="service-type">
+                <option value="personal">Simple personal T1 return</option>
+                <option value="couple">Two simple personal T1 returns</option>
+                <option value="rental">Personal return with rental income</option>
+                <option value="self-employed">Self-employed / freelancer return</option>
+                <option value="corporate">Corporate tax or ongoing accounting</option>
+              </select>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
+            </div>
+          </div>
+          <div class="estimate-result" aria-live="polite">
+            <p>Your estimated starting fee</p>
+            <div class="estimate-value" id="estimate-value">$50</div>
+            <span id="estimate-note">For a straightforward personal return with standard slips.</span>
+          </div>
+          <a class="button button-primary button-full" id="estimate-cta" href="mailto:tax.rpk@gmail.com?subject=Personal%20Tax%20Consultation">Confirm My Quote</a>
+          <p class="estimator-disclaimer">Starting prices are in CAD and may change based on complexity, number of slips, bookkeeping condition and prior-year work.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience-section">
+      <div class="site-container">
+        <div class="section-heading centered-heading">
+          <span class="section-label">What affects the fee</span>
+          <h2>A starting estimate, followed by a clear quote.</h2>
+          <p>RPK reviews the actual scope so your final price reflects the work your file requires.</p>
+        </div>
+        <div class="experience-grid">
+          <article><span class="quote-mark">01</span><h3>Your filing situation</h3><p>Rental income, self-employment, investments, corporations and multiple years can require additional schedules and review.</p></article>
+          <article><span class="quote-mark">02</span><h3>Your record condition</h3><p>Complete, organized records reduce preparation time. Catch-up bookkeeping or missing details may expand the scope.</p></article>
+          <article><span class="quote-mark">03</span><h3>Your confirmed scope</h3><p>You receive the expected fee or pricing approach before work starts, with any changes explained clearly.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="client-access-section">
+      <div class="site-container client-access-inner">
+        <div class="client-access-copy">
+          <span class="access-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 10V7a5 5 0 0 1 10 0v3"></path><rect x="4" y="10" width="16" height="11" rx="2"></rect><path d="M12 14v3"></path></svg></span>
+          <div><span class="section-label light-label">Ready to proceed?</span><h2>Complete your secure intake.</h2><p>Choose Individual, Couple or Corporation and provide the details needed to review your file.</p></div>
+        </div>
+        <a class="button button-light" href="https://docs.google.com/forms/d/e/1FAIpQLSdkCDDYJLLwhpc_lVkpi-7uktjtUjOWHdUoQZ3_wsa8YD4_XA/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">Start Secure Upload</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-container footer-grid">
+      <div class="footer-brand"><a class="brand footer-logo" href="index.html" aria-label="RPK Accounting home"><img src="rpk-logo.png" alt="RPK Accounting"></a><p>Accounting and tax filing support for individuals, freelancers and small businesses across Canada.</p><div class="footer-security"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.6 3 7.8 7.5 9.5 4.5-1.7 7.5-4.9 7.5-9.5V6z"></path><path d="m8.5 12 2.2 2.2 4.8-5"></path></svg>Secure document workflow</div></div>
+      <div class="footer-column"><h2>Services</h2><a href="services.html">Personal Tax</a><a href="services.html">Small Business Accounting</a><a href="services.html">Payroll</a><a href="services.html">GST/HST</a></div>
+      <div class="footer-column"><h2>Explore</h2><a href="pricing.html">Pricing</a><a href="calculator.html">Fee Estimator</a><a href="about.html">About RPK</a><a href="resources.html">CRA Resources &amp; FAQs</a></div>
+      <div class="footer-column footer-contact"><h2>Contact</h2><a href="tel:+16476752535">647-675-2535</a><a href="mailto:tax.rpk@gmail.com">tax.rpk@gmail.com</a><a href="https://wa.me/16476752535" target="_blank" rel="noopener noreferrer">WhatsApp</a><span>Canada-wide virtual service</span></div>
+    </div>
+    <div class="site-container footer-bottom"><p>© <span id="current-year">2026</span> RPK Accounting &amp; Tax Filing Services. All rights reserved.</p><p>General information only. Services and pricing are subject to engagement terms and file review.</p></div>
+  </footer>
+  <script src="script.js?v=multipage-20260901"></script>
+</body>
+</html>

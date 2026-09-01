@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://rpkaccounting.ca/</loc></url>
-  <url><loc>https://rpkaccounting.ca/services.html</loc></url>
-  <url><loc>https://rpkaccounting.ca/pricing.html</loc></url>
-  <url><loc>https://rpkaccounting.ca/calculator.html</loc></url>
-  <url><loc>https://rpkaccounting.ca/about.html</loc></url>
-  <url><loc>https://rpkaccounting.ca/resources.html</loc></url>
+  <url>
+    <loc>https://rpkaccounting.ca/</loc>
+    <lastmod>2026-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://rpkaccounting.ca/services.html</loc>
+    <lastmod>2026-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://rpkaccounting.ca/pricing.html</loc>
+    <lastmod>2026-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://rpkaccounting.ca/calculator.html</loc>
+    <lastmod>2026-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://rpkaccounting.ca/about.html</loc>
+    <lastmod>2026-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://rpkaccounting.ca/resources.html</loc>
+    <lastmod>2026-09-01</lastmod>
+  </url>
 </urlset>
